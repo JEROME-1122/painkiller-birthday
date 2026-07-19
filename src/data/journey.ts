@@ -1,0 +1,16 @@
+export const journey = [
+  "/",
+  "/welcome",
+  "/password",
+  "/story",
+  "/gallery",
+  "/video",
+  "/letters",
+  "/roses",
+  "/gift",
+  "/wheel",
+  "/balloons",
+  "/cake",
+  "/fireworks",
+  "/finale",
+];

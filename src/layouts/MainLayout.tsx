@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 import Background from "../components/background/Background";
 import MusicPlayer from "../components/music/MusicPlayer";
-
+import PageTransition from "../components/transition/PageTransition";
 interface MainLayoutProps {
   children: ReactNode;
 }
@@ -10,11 +10,13 @@ interface MainLayoutProps {
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
-      <Background />
+      <PageTransition>
+        <Background />
 
-      <main className="relative min-h-screen">{children}</main>
+        <main className="relative min-h-screen">{children}</main>
 
-      <MusicPlayer />
+        <MusicPlayer />
+      </PageTransition>
     </>
   );
 };

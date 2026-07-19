@@ -1,11 +1,15 @@
- 
+import MainLayout from "../layouts/MainLayout";
+import Hero from "../components/welcome/Hero";
+import PageTransition from "../components/transition/PageTransition";
 
-function Welcome() {
+const Welcome = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <MainLayout>
+      <PageTransition>
+        <Hero />
+      </PageTransition>
+    </MainLayout>
+  );
+};
 
-export default Welcome
+export default Welcome;
