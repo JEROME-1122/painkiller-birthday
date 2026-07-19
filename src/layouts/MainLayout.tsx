@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import Background from "../components/common/Background";
+
+import Background from "../components/background/Background";
 import MusicPlayer from "../components/music/MusicPlayer";
 
 interface MainLayoutProps {
@@ -8,16 +9,13 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#050816] text-white">
-      {/* Global animated background */}
+    <>
       <Background />
 
-      {/* Page content */}
-      <main className="relative z-10">{children}</main>
+      <main className="relative min-h-screen">{children}</main>
 
-      {/* Global music control */}
       <MusicPlayer />
-    </div>
+    </>
   );
 };
 
